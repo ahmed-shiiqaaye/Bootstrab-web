@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&family=Poppins:wght@400;500&family=Satisfy&display=swap');
 *{
     box-sizing: border-box;
+    list-style: none;
 }
 
 :root{
     --light-black: rgba(0,0,0,.6);
     --light-white:rgba(25, 135, 84,0.3);
     --bg-success: #198754;
+    --ff:josefin sans;
 }
 img{
     width: 100%;
@@ -18,6 +20,9 @@ img{
 
 body{
     font-family: poppins;        
+}
+.font-family{
+    font-family: josefin sans;
 }
 .navbar .logo-img{
     width: 100%;
@@ -227,4 +232,99 @@ color: var(--light-black);
     .footer .container .col .my-4{
         font-size: 15px;
     }
+}
+
+/* ======================================
+================PAGE ONE===================
+ ========================================== */
+
+
+/* ======================================
+================PAGE TWO Pricing=============
+ ========================================== */
+.pricing-showcase .container .row .col-lg-10 .bold{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--bg-success);
+}
+.pricing-showcase .container .row .col-lg-10 h1{
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 50px;
+    font-family: var(--ff);
+}
+.pricing-showcase .container .row .col-lg-10 .leads{
+    font-weight: 400;
+    line-height: 1.8;
+    font-size: 19px;
+    font-family: var(--ff);
+}
+.two-grid p{
+    opacity: .8;
+}
+.two-grid .no-border{
+    border: 1px solid white;
+    border-radius: 0;
+}
+
+
+.table .lead{
+    color: var(--light-black);
+}
+.table .note{
+    font-weight: bold;
+    font-style: italic;
+}
+.table .card-head h4{
+    font-weight: 800;
+}
+.table .col-md-3 .h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+.table .btn{
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.table .container-fluid .row .col-md-3 .card .body .price-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 20px;
+}
+.table .container-fluid .row .col-md-3 .card .body .price-flex .price{
+    position: relative;
+}
+.table .container-fluid .row .col-md-3 .card .body .price-flex .price span.s1{
+    font-size: 15px;
+    position: absolute;
+    top: 3px;
+    left: -13px;
+}
+.table .container-fluid .row .col-md-3 .card .body .price-flex .price span.s2{
+    font-size: 16px;
+}
+
+.table ul li{
+    margin: 8px 0;
+    font-size: 18px;
+    text-align: left;
+}
+.table ul li i.fa-check-circle{
+    color: var(--bg-success);
+    margin-right: 5px;
+    
+}
+.table ul li i.fa-times-circle{
+    color: rgb(186, 11, 11);
+    font-size: 20px;
+}
+.table .bg-discount{
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
